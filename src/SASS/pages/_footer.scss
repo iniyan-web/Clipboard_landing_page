@@ -1,0 +1,70 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+footer {
+  height: 10rem;
+  background-color: $footer-bg;
+  padding: 2rem 6rem 2rem 5rem;
+
+  .footer-logo {
+    width: 3rem;
+  }
+
+  .footer-links {
+    width: 42%;
+    margin-right: 11rem;
+
+    .footer-links-pair1 p,
+    .footer-links-pair2 p,
+    .footer-link p {
+      font-size: 1rem;
+
+      &:hover {
+        cursor: pointer;
+        color: $ios-btn-color;
+      }
+    }
+
+    .footer-links-pair1 p:not(:nth-child(2)),
+    .footer-links-pair2 p:not(:nth-child(2)) {
+      margin-bottom: 1.5em;
+    }
+
+    .footer-link {
+      margin-top: -2.8rem;
+    }
+  }
+
+  .footer-icons {
+    width: 6.5rem;
+
+    .footer-icon {
+      background-color: $dark-Grayish-Blue;
+      display: inline-block;
+      mask-size: cover;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $ios-btn-color;
+      }
+    }
+
+    .fb {
+      mask: url("../../images/icon-facebook.svg");
+      width: 24px;
+      height: 24px;
+    }
+
+    .twitter {
+      mask: url("../../images/icon-twitter.svg");
+      width: 24px;
+      height: 20px;
+    }
+
+    .instagram {
+      mask: url("../../images/icon-instagram.svg");
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

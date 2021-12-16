@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as *;
+
+.feature-first .bottom-section,
+.feature-second .fs-bs-sub,
+.download .top-section,
+.download-btns,
+footer,
+.footer-links,
+.footer-icons {
+  @include flex(center, space-between);
+}

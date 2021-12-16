@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+html {
+  @include body-copy;
+}
+
+body {
+  @include font-family;
+}
+
+h1,
+h2,
+h3 {
+  color: $dark-Grayish-Blue;
+  font-weight: 600;
+}
+
+p {
+  color: $grayish-Blue;
+  font-weight: 400;
+}
+
+.footer-links-pair1 p,
+.footer-links-pair2 p,
+.footer-link p {
+  color: $dark-Grayish-Blue;
+  font-weight: 400;
+}

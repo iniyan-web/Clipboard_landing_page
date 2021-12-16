@@ -1,0 +1,109 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.feature-first {
+  height: 42rem;
+
+  .top-section {
+    height: 24%;
+    text-align: center;
+
+    .ff-ts-title {
+      font-size: 2rem;
+    }
+
+    .ff-ts-info {
+      font-size: 1rem;
+      padding: 1em 24%;
+      line-height: 1.5em;
+    }
+  }
+
+  .bottom-section {
+    height: 76%;
+
+    .ff-bs-img {
+      width: 52%;
+      margin-left: -2rem;
+    }
+
+    .ff-bs-text {
+      margin: auto 12.5% auto 8%;
+    }
+
+    .ff-bs-title {
+      font-size: 1.4rem;
+    }
+
+    .ff-bs-info {
+      font-size: 1rem;
+      line-height: 1.6em;
+      padding: 0.5em 0 3em;
+    }
+  }
+}
+
+.feature-second {
+  height: 75rem;
+
+  .top-section {
+    height: 70%;
+    text-align: center;
+
+    .fs-ts-title {
+      font-size: 2rem;
+      padding-top: 3em;
+    }
+
+    .fs-ts-info {
+      font-size: 1rem;
+      padding: 1em 24% 5em;
+      line-height: 1.5em;
+    }
+
+    .fs-ts-img {
+      width: 70%;
+    }
+  }
+
+  .bottom-section {
+    height: 30%;
+    text-align: center;
+
+    .fs-bs-main-title {
+      font-size: 2rem;
+      padding-top: 1em;
+    }
+
+    .fs-bs-main-info {
+      font-size: 1rem;
+      padding: 1em 24% 3em;
+      line-height: 1.5em;
+    }
+
+    .fs-bs-sub {
+      margin: 0 3%;
+
+      .fs-bs-sub-feature {
+        padding: 0 2rem;
+        flex-basis: 100%;
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: -1rem;
+          padding: 0 0.2rem;
+        }
+
+        .fs-bs-sub-heading {
+          font-size: 1.4rem;
+          padding: 1.5em 0 0.5em;
+        }
+
+        .fs-bs-sub-info {
+          font-size: 1rem;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}

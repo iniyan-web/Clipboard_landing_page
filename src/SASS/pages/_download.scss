@@ -1,0 +1,25 @@
+.download {
+  height: 39rem;
+
+  .top-section {
+    height: 40%;
+    padding: 3rem 4rem 0;
+  }
+
+  .bottom-section {
+    height: 60%;
+    text-align: center;
+    padding-top: 1rem;
+
+    .d-bs-title {
+      font-size: 2rem;
+      padding-top: 1em;
+    }
+
+    .d-bs-info {
+      font-size: 1rem;
+      padding: 1em 25% 2.5em;
+      line-height: 1.5em;
+    }
+  }
+}
